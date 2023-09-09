@@ -1,13 +1,14 @@
-## **CLASS & FUNCTIONS**
+#**CLASS & FUNCTIONS**
+# Class means a blueprint of code which consists of a functions and methods.
 
-#blueprint of code
-#constructor -> obj
+
+#constructor -> objects
 
 class www:
     name="dinesh"
     id=23
 
-x=www() # a variable , assigned to a class -> object
+x=www() # a variable , assigned to a class -> object/instance
 
 x
 
@@ -90,7 +91,7 @@ class emp:
     def modify(self,new_name):
         self.Name=new_name
 class guvi(emp):
-    pass          # DEFINITION - PASS: is a placeholder, we using when the function has not need to do anything.
+    pass          #PASS: is a placeholder, we use 'pass' when the function has not need to do anything.
                   #This is helpful when you are in the early stages of development and are still planning the program's structure.
 
 e3=guvi(1222,"suresh",54)
@@ -128,7 +129,7 @@ class tcs(emp):
         self.loc=location
     def show(self):
         print("name",self.Name,"\nid","T"+str(self.ID),"\nage",self.Age,"\nlocation",self.loc)
-class hcl(emp):
+class hcl(emp):  # Here hcl class(child class) inherits the attributes and methods of the emp class(parent class).
     def show(self):
         print("name",self.Name,"\nid","H"+str(self.ID),"\nage",self.Age)
 
